@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+""" method to open locked boxes """
 def canUnlockAll(boxes):
+    """ ... """
     unlocked = set([0])
     keys = [0]
 
