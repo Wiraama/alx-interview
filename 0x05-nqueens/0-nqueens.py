@@ -8,7 +8,8 @@ def print_solution(solution):
 
 
 def is_safe(solution, row, col):
-    """Checks if a queen can be placed on the board at the given row and col."""
+    """Checks if a queen can be placed on the
+    board at the given row and col."""
     for i in range(row):
         if solution[i] == col or \
            solution[i] - i == col - row or \
