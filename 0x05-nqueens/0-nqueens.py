@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 import sys
 
+
 def print_solution(solution):
     """Prints the solution in the required format."""
     print([[i, solution[i]] for i in range(len(solution))])
+
 
 def is_safe(solution, row, col):
     """Checks if a queen can be placed on the board at the given row and col."""
@@ -13,6 +15,7 @@ def is_safe(solution, row, col):
            solution[i] + i == col + row:
             return False
     return True
+
 
 def solve_nqueens(N, row, solution):
     """Recursively attempts to solve the N queens problem."""
@@ -24,6 +27,7 @@ def solve_nqueens(N, row, solution):
         if is_safe(solution, row, col):
             solution[row] = col
             solve_nqueens(N, row + 1, solution)
+
 
 def main():
     """Main entry point of the program."""
@@ -43,6 +47,7 @@ def main():
 
     solution = [-1] * N
     solve_nqueens(N, 0, solution)
+
 
 if __name__ == "__main__":
     main()
