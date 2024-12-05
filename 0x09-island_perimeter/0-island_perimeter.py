@@ -13,6 +13,7 @@ def island_perimeter(grid):
     : cells are connected horizontally
     : grid is rectangularwith h & w < 100
     """
+
     perimeter = 0
     row = len(grid)
     column = len(grid[0])
@@ -20,8 +21,8 @@ def island_perimeter(grid):
     for i in range(row):
         for j in range(column):
             if grid[i][j] == 1:
-                perimeter += 4 # for the 4 sides
-                
+                perimeter += 4
+
                 if i > 0 and grid[i - 1][j] == 1:
                     perimeter -= 2
 
