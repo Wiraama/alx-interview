@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ game """
+
+
 def isWinner(x, nums):
     """
     Determines the winner of the game for x rounds.
